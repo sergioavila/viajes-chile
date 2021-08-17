@@ -39,6 +39,9 @@ section h2{
     background-color:#20c997;
     margin-bottom: 2em;
 }
+#destacados .card img{
+    cursor: pointer;
+}
 footer{
     background-color:#20c997;
     margin-top: 2em;
