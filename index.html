@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="menu">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" data-bs-toggle="tooltip" title="Some tooltip text!" id="logo">
                 <img src="assets/img/viajes.svg" alt="Viajes Chile" width="40"> Viajes Chile
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#enlaces" aria-controls="enlaces" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-none d-md-block">
                 <a class="nav-link" href="#quienes-somos">Quienes somos</a>
               </li>
               <li class="nav-item">
@@ -64,12 +64,12 @@
         </div>
     </section>
 
-    <section id="quienes-somos">
+    <section id="quienes-somos" class="d-none d-md-block">
       <div class="container">
         <h2>Quienes somos</h2>
         <div class="row">
           <div class="col-md-4">
-            <span class="d-none d-md-block"><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-plane"></i></span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequatur doloribus totam, beatae accusantium accusamus eos ad officia ducimus aut laudantium perferendis provident laborum temporibus quisquam debitis ipsa amet nulla?
               Culpa debitis earum assumenda doloribus consectetur dignissimos atque illum ullam. Iure saepe praesentium totam esse quam aliquid unde cupiditate natus ducimus, amet quas enim. Earum consequatur voluptas consequuntur asperiores dolor!
               Odio veritatis fugiat, neque corporis impedit quod odit? Quae suscipit dolorem deserunt, praesentium temporibus animi expedita repellendus maiores fuga facilis possimus, dolor vitae perferendis! Eos praesentium omnis debitis dolores cumque.
@@ -80,10 +80,10 @@
             Culpa debitis earum assumenda doloribus consectetur dignissimos atque illum ullam. Iure saepe praesentium totam esse quam aliquid unde cupiditate natus ducimus, amet quas enim. Earum consequatur voluptas consequuntur asperiores dolor!
             Odio veritatis fugiat, neque corporis impedit quod odit? Quae suscipit dolorem deserunt, praesentium temporibus animi expedita repellendus maiores fuga facilis possimus, dolor vitae perferendis! Eos praesentium omnis debitis dolores cumque.
             Corporis, accusamus saepe labore libero esse ex maxime blanditiis perspiciatis magnam molestiae rem quis et reiciendis voluptatibus quidem temporibus similique. Cumque temporibus odio laudantium optio tempore, ex veritatis aperiam dolorum!</p>
-            <span class="d-none d-md-block"><i class="fas fa-mountain"></i></span>
+            <span><i class="fas fa-mountain"></i></span>
           </div>
           <div class="col-md-4">
-            <span class="d-none d-md-block"><i class="fas fa-route"></i></span>
+            <span><i class="fas fa-route"></i></span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto modi ex et reiciendis laudantium enim tempora voluptatem, voluptate porro non doloribus, placeat repellat ipsum. Quae voluptas voluptatum facere delectus illum?
             Sit eum totam consectetur, doloremque maiores nisi maxime enim officiis ut, vel amet, culpa voluptas cumque mollitia possimus sed aperiam quibusdam quis magnam? Distinctio tenetur iure, unde illo deleniti corrupti!
             Dolorem nesciunt ad magnam ullam! Officiis, pariatur cupiditate? Non quis vitae sint rem facilis earum possimus asperiores quas obcaecati ullam adipisci, beatae libero recusandae quisquam, cum sed autem similique enim.
@@ -99,7 +99,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="card">
-              <img src="assets/img/card1.jpg" class="card-img-top" alt="Card 1">
+              <img src="assets/img/card1.jpg" class="card-img-top" alt="Card 1" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -108,7 +108,7 @@
           </div>
           <div class="col-md-3">
             <div class="card">
-              <img src="assets/img/card1.jpg" class="card-img-top" alt="Card 1">
+              <img src="assets/img/card2.jpg" class="card-img-top" alt="Card 1"  data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -117,7 +117,7 @@
           </div>
           <div class="col-md-3">
             <div class="card">
-              <img src="assets/img/card1.jpg" class="card-img-top" alt="Card 1">
+              <img src="assets/img/card3.jpg" class="card-img-top" alt="Card 1"  data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -126,7 +126,7 @@
           </div>
           <div class="col-md-3">
             <div class="card">
-              <img src="assets/img/card1.jpg" class="card-img-top" alt="Card 1">
+              <img src="assets/img/card4.jpg" class="card-img-top" alt="Card 1"  data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -166,7 +166,20 @@
         </div>
       </div>
     </footer>
-    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/card1.jpg" class="card-img-top" alt="Card 1">
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6d5f18bb9d.js" crossorigin="anonymous"></script>
